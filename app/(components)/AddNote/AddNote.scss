@@ -1,0 +1,53 @@
+
+.addnote{
+   
+    .line{
+        width: 80%;
+        height: 3px;
+        background-color: orange;
+        position:relative;
+    }
+    .line::after{
+        position:absolute;
+        content:'Note App';
+        top:-60px;
+        left:20px;
+        font-size:40px;
+        font-weight:bold;
+        background: -webkit-linear-gradient(orange,gold );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    .button-cont{
+        min-width: 20%;
+       
+    }
+    button{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+       
+       
+    }
+
+    
+}
+
+@media (max-width: 950px){
+    .addnote{
+
+        button{
+            width: 90%;
+        }
+    }
+
+}
+@media (max-width: 575px){
+    .addnote{
+        
+       margin-top:300px  !important;
+      
+    }
+
+}
